@@ -51,7 +51,7 @@ void WiShield::init()
 	zg_init();
 
 #ifdef USE_DIG0_INTR
-	attachInterrupt(0, zg_isr, LOW);
+	attachInterrupt(2, zg_isr, LOW);
 #endif
 
 #ifdef USE_DIG8_INTR
